@@ -1,17 +1,21 @@
 <?php
 
 use Slim\Slim;
+use Hcode\Page;
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+$app = new Slim();
 
 $app->config("debug", true);
 
 $app->get("/", function () {
-    $sql = new Hcode\DB\Sql();
-    $result = $sql->select("SELECT * FROM tb_persons;");
-    echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    // * tem que instanciar Page
+    $page = new Page();
+
+    // * vai chamar construct e criar pagina;
+    $page->setTpl("index");    // * apos terminar o carregamnento, classe vai chamar destruct que fechará com footer.html;
 });
 
+// * Executa toda instrução 
 $app->run();
