@@ -6,14 +6,14 @@ use PDO;
 
 class Sql
 {
-    const   HOSTNAME = "127.0.0.1";
+    const   HOSTNAME = "192.168.18.17";
     const   USERNAME = "root";
-    const   PASSWORD = "";
-    const   DBNAME = "db_ecommerce_hcode";
+    const   PASSWORD = "root";
+    const   DBNAME = "db_ecommerce";
 
     private $conn;
 
-    //? 1 - $conn = new \PDO("mysql:dbname=db_ecommerce_hcode;host=127.0.0.1", "root", "");
+    //? 1 - $conn = new \PDO("mysql:dbname=db_ecommerce;host=127.0.0.1", "root", "root");
     public function __construct()
     {
         $this->conn = new \PDO(
