@@ -9,7 +9,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>AdminLTE 2 | Starter</title>
         <!-- Remove favicon error -->
-        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="shortcut icon" href="#" type="image/x-icon" 
+        />
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
