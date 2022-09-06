@@ -13,14 +13,14 @@ class Page
         "data" => []
     ];
 
-    public function __construct($opts = array())
+    public function __construct($opts = array(), $tpl_dir = "/views/")
     {
         // * Sobrescrever dados default pela informação que vier de $opts;
         $this->options = array_merge($this->defaults, $opts);
 
         // * Variavel responsável por configurar o Rain template
         $config = array(
-            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . "/views/",
+            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . $tpl_dir,
             "cahce_dir" => $_SERVER["DOCUMENT_ROOT"] . "/views-cache/",
             "debug" => false,
         );

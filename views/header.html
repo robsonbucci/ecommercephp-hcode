@@ -8,7 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Hcode Store</title>
-
+        <!-- Remove favicon error -->
+        <link rel="shortcut icon" href="#" type="image/x-icon" 
+        />
         <!-- Google Fonts -->
         <link
             href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600"
