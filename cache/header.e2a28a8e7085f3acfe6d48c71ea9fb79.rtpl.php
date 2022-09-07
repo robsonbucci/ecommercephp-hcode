@@ -301,7 +301,7 @@ desired effect
                                         </div>
                                         <div class="pull-right">
                                             <a
-                                                href="#"
+                                                href="admin/logout"
                                                 class="btn btn-default btn-flat"
                                                 >Sign out</a
                                             >

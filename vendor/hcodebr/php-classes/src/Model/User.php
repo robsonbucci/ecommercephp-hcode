@@ -16,7 +16,7 @@ class User extends Model
             ":LOGIN" => $login
         ));
 
-        if (count($results) === 0) throw new \Exception("Dados do usuário ou senha inválidos");
+        if (count($results) === 0) throw new \Exception("Dados de usuário ou senha inválidos");
 
         $data = $results[0];
 
@@ -34,6 +34,7 @@ class User extends Model
         } else throw new \Exception("Dados do usuário ou senha inválidos");
     }
 
+    // verifica se pessoa está logada
     public static function verifyLogin($inadmin = true)
     {
         if (
@@ -43,7 +44,6 @@ class User extends Model
             (bool)$_SESSION[User::SESSION]["inadmin"] !== $inadmin
         ) {
             header("location: /admin/login");
-            exit;
         }
     }
 
